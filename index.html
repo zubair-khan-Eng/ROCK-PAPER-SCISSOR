@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Rock Paper Scissors</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Outfit:wght@400;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <div class="app">
+      <header class="header">
+        <h1 class="title">Rock Paper Scissors</h1>
+        <label class="mode-toggle">
+          <input type="checkbox" id="bo5Toggle" aria-describedby="bo5Hint" />
+          <span class="mode-toggle__ui"></span>
+          <span class="mode-toggle__label">Best of 5</span>
+        </label>
+        <p id="bo5Hint" class="hint">First to 3 wins the match</p>
+      </header>
+
+      <section class="scoreboard" aria-label="Scores">
+        <div class="score-card score-card--user">
+          <span class="score-card__label">You</span>
+          <span class="score-card__value" id="userScore">0</span>
+        </div>
+        <div class="score-divider" aria-hidden="true">vs</div>
+        <div class="score-card score-card--computer">
+          <span class="score-card__label">Computer</span>
+          <span class="score-card__value" id="computerScore">0</span>
+        </div>
+      </section>
+
+      <main class="main">
+        <div class="result-panel" id="resultPanel" role="status" aria-live="polite">
+          <p class="result-panel__emoji" id="resultEmoji" aria-hidden="true">🎮</p>
+          <p class="result-panel__message" id="resultMessage">Pick your move</p>
+          <div class="choices-display">
+            <div class="choice-block">
+              <span class="choice-block__title">Your choice</span>
+              <span class="choice-block__value" id="userChoiceDisplay">—</span>
+            </div>
+            <div class="choice-block">
+              <span class="choice-block__title">Computer</span>
+              <span class="choice-block__value" id="computerChoiceDisplay">—</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="actions">
+          <button type="button" class="pick-btn" data-choice="rock" aria-label="Choose Rock">
+            <span class="pick-btn__emoji" aria-hidden="true">✊</span>
+            <span class="pick-btn__text">Rock</span>
+          </button>
+          <button type="button" class="pick-btn" data-choice="paper" aria-label="Choose Paper">
+            <span class="pick-btn__emoji" aria-hidden="true">✋</span>
+            <span class="pick-btn__text">Paper</span>
+          </button>
+          <button type="button" class="pick-btn" data-choice="scissors" aria-label="Choose Scissors">
+            <span class="pick-btn__emoji" aria-hidden="true">✌️</span>
+            <span class="pick-btn__text">Scissors</span>
+          </button>
+        </div>
+
+        <div class="footer-actions">
+          <button type="button" class="btn btn--ghost" id="newMatchBtn" hidden>New match</button>
+          <button type="button" class="btn btn--secondary" id="resetBtn">Reset game</button>
+        </div>
+      </main>
+    </div>
+
+    <script src="game.js"></script>
+  </body>
+</html>
