@@ -1,19 +1,26 @@
-# Rock Paper Scissor Game ✂️
+# ✂️ Rock Paper Scissor Game
 
-A fun Rock Paper Scissor game built with HTML, CSS, and JavaScript.
+A fun and interactive Rock Paper Scissor game built with vanilla HTML, CSS, and JavaScript.
 
-## 🎮 How to Play
-- Choose Rock, Paper, or Scissor
-- Computer randomly picks its choice
-- Winner is decided based on classic rules
+🎮 **Live Demo:** [Play Now](https://rock-paper-scissor-flame-eight.vercel.app)
+
+---
+
+## 🕹️ How to Play
+- Click on **Rock**, **Paper**, or **Scissor**
+- The computer randomly picks its choice
+- The winner is decided based on classic rules:
+  - Rock beats Scissor
+  - Scissor beats Paper
+  - Paper beats Rock
+
+---
 
 ## 🛠️ Technologies Used
-- HTML
-- CSS
-- JavaScript
+- HTML5
+- CSS3
+- JavaScript (Vanilla)
 
-## 🚀 Live Demo
-[Click here to play](#) ← add your live link if deployed
+---
 
-## 👤 Author
-**Zubair Khan**
+## 📁 Project Structure
