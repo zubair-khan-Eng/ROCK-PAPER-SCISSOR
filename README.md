@@ -24,3 +24,10 @@ A fun and interactive Rock Paper Scissor game built with vanilla HTML, CSS, and 
 ---
 
 ## 📁 Project Structure
+
+```
+ROCK-PAPER-SCISSOR/
+├── index.html
+├── game.js
+└── styles.css
+```
